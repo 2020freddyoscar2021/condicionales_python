@@ -31,5 +31,28 @@ no se busca utilizar bucles o algoritmos de ordenamiento ya que aún no hemos ll
 contenido.
 '''
 
+from array import array
+
+
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+
+palabra_1 = str(input('Ingreso primer palabra: '))
+palabra_2 = str(input('Ingrese segundo palabra: '))
+palabra_3 = str(input('Ingrese tercer palabra: '))
+
+my_list_alfabetico = [palabra_1, palabra_2, palabra_3]
+my_list_cantida_letras = [len(palabra_1), len(palabra_2), len(palabra_3)]
+
+orden = int(input('Ingrese valor 1 si quiere ordenar de forma alfabetica, y 2 si quiere orden cantidad letras: ')) # si es 1 es ordenar alfabetico y lo contrario es cantidad letras
+
+
+if orden == 1 :
+    my_list_alfabetico.sort()
+    print(my_list_alfabetico)
+else:
+    my_list_cantida_letras.sort(reverse = True)
+    print(my_list_cantida_letras)
+
+print('Termino proceso ')

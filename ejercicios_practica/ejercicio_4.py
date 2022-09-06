@@ -17,12 +17,26 @@ texto_2 = '7'
 # se utiliza el operador mayor o menor con Strings (textos)
 # Imprima en pantalla según corresponda
 
+if texto_1 > texto_2 :
+    print("Texto_1 es mayor")
+else:
+    print("Texto_2 es mayor")
+
+
 # 2-Transforma esas variables tipo texto en variables numéricas con (int)
 # y almacénalas en nuevas variables.
 # Compare las nuevas variables para ver cual es mayor o menor
 # utilizando los operadores correspondientes
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
+
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
+
+if numero_1 > numero_2 :
+    print("numero_1 es mayor")
+else:
+    print("numero_2 es mayor")
 
 # Para pensar!
 # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -32,3 +46,8 @@ texto_2 = '7'
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+'''es mayor dado que la comparación se da con el codigo ASCII, 
+el valor 7 en codigo ascii es igual codigo ascii 55 = 7 ( Número siete )
+mientras que para valor 5 es codigo ascii 53 = 5 ( Número cinco )
+como se pude observar el mayor valor es 7 representado con 55'''
